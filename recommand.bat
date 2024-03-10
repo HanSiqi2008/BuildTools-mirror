@@ -36,6 +36,6 @@ powershell -command ("wget -o Vivecraft-VRMC.jar https://cdn.modrinth.com/data/w
 powershell -command ("wget -o kotlin.jar https://cdn.modrinth.com/data/ordsPcFz/versions/9j6YaPp2/kotlinforforge-4.10.0-all.jar")
 
 cd %acd%
-copy .\fabric-loader-0.15.7-1.20.4\resourcepacks\* .\neoforge-20.4.196\
+copy .\fabric-loader-0.15.7-1.20.4\resourcepacks\* .\neoforge-20.4.196\resourcepacks\
 cd %rootdir%
 mce.bat
