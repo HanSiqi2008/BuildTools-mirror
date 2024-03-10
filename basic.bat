@@ -101,4 +101,4 @@ powershell -command ("wget -o .\.minecraft\hmclJar\hmcl.json https://github.ink/
 
 ::Goto next bat if it exist
 cd %rootdir%
-start recommand.bat
+recommand.bat
