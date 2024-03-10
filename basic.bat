@@ -99,4 +99,4 @@ powershell -command ("wget -o hmcl.json https://github.ink/HanSiqi2008/something
 powershell -command ("wget -o .\.minecraft\hmclJar\hmcl.json https://github.ink/HanSiqi2008/something-mirror/raw/main/hmcl.json")
 
 ::Goto next bat if it exist
-recommand.bat
+start recommand.bat
