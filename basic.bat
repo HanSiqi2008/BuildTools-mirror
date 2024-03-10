@@ -90,3 +90,6 @@ powershell -command ("wget -o HMCL.exe https://ci.huangyuhui.net/job/HMCL/236/ar
 echo ".\Java\jre-17.0.10\bin\java.exe" -Xmx256m -jar .\.minecraft\hmclJar\hmcl.jar > HMCL.bat
 powershell -command ("wget -o hmcl.json https://github.ink/HanSiqi2008/something-mirror/raw/main/hmcl.json")
 powershell -command ("wget -o .\.minecraft\hmclJar\hmcl.json https://github.ink/HanSiqi2008/something-mirror/raw/main/hmcl.json")
+
+::Goto next bat if it exist
+recommand.bat
