@@ -1,3 +1,4 @@
+del basic.bat
 cd mcpack
 ::   powershell -command ("wget -o ")
 
