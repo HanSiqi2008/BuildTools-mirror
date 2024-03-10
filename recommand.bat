@@ -1,3 +1,4 @@
+set rootdir=%cd%
 del basic.bat
 cd mcpack
 ::   powershell -command ("wget -o ")
@@ -36,5 +37,5 @@ powershell -command ("wget -o kotlin.jar https://cdn.modrinth.com/data/ordsPcFz/
 
 cd %acd%
 copy .\fabric-loader-0.15.7-1.20.4\resourcepacks\* .\neoforge-20.4.196\
-
+cd %rootdir%
 mce.bat
