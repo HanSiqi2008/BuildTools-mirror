@@ -5,6 +5,7 @@
 mkdir mcpack
 cd mcpack
 set tempcd=%cd%
+mkdir Java
 mkdir ".minecraft"
 cd .\.minecraft\
 mkdir versions
