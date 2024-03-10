@@ -20,7 +20,7 @@ powershell -command ("wget -o jre17.zip https://download.bell-sw.com/java/17.0.1
 title Download bandizip......
 powershell -command ("wget -o ark.x64.dll https://github.ink/HanSiqi2008/bz.exe-mirror/raw/main/ark.x64.dll")
 powershell -command ("wget -o bz.exe https://github.ink/HanSiqi2008/bz.exe-mirror/raw/main/bz.exe")
-bz.exe x ./jre17.zip ./
+bz.exe x ./jre17.zip ./Java
 del .\jre17.zip
 del .\bz.exe
 del .\ark.x64.dll
@@ -32,7 +32,8 @@ powershell -command ("wget -o fabric-installer.jar https://maven.fabricmc.net/ne
 powershell -command ("wget -o .\.minecraft\launcher_profiles.json https://github.ink/HanSiqi2008/something-mirror/raw/main/launcher_profiles.json")
 ::install fabric......
 title Install Fabric-0.15.7......
-".\jre-17.0.10\bin\java.exe" -Xmx512m -jar fabric-installer.jar client -mcversion 1.20.4 -loader 0.15.7 -dir "./.minecraft"
+".\Java\jre-17.0.10\bin\java.exe" -Xmx512m -jar fabric-installer.jar client -mcversion 1.20.4 -loader 0.15.7 -dir "./.minecraft"
+del fabric-installer.jar
 
 ::Download Mods,ResourcePacks,ShaderPacks
 title Download Mods,ResourcePacks,ShaderPacks......
@@ -86,6 +87,6 @@ cd %tempcd%
 title Download HMCL......
 powershell -command ("wget -o .\.minecraft\hmclJar\hmcl.jar https://ci.huangyuhui.net/job/HMCL/236/artifact/HMCL/build/libs/HMCL-3.5.5.236.jar")
 powershell -command ("wget -o HMCL.exe https://ci.huangyuhui.net/job/HMCL/236/artifact/HMCL/build/libs/HMCL-3.5.5.236.exe")
-echo ".\jre-17.0.10\bin\java.exe" -Xmx256m -jar .\.minecraft\hmclJar\hmcl.jar > HMCL.bat
+echo ".\Java\jre-17.0.10\bin\java.exe" -Xmx256m -jar .\.minecraft\hmclJar\hmcl.jar > HMCL.bat
 powershell -command ("wget -o hmcl.json https://github.ink/HanSiqi2008/something-mirror/raw/main/hmcl.json")
 powershell -command ("wget -o .\.minecraft\hmclJar\hmcl.json https://github.ink/HanSiqi2008/something-mirror/raw/main/hmcl.json")
