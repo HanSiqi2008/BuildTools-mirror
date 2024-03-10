@@ -15,14 +15,20 @@ mkdir 1.20.4
 cd %tempcd%
  
 ::Actually,I could use (winget install Microsoft.OpenJDK.17) to install java,but not all pc can use winget,so i use wget there
-title Download LibericaJRE17......
+title Download Java......
 powershell -command ("wget -o jre17.zip https://download.bell-sw.com/java/17.0.10+13/bellsoft-jre17.0.10+13-windows-amd64.zip")
+powershell -command ("wget -o jre8.zip https://github.ink/ibmruntimes/semeru8-binaries/releases/download/jdk8u402-b06_openj9-0.43.0/ibm-semeru-open-jre_x64_windows_8u402b06_openj9-0.43.0.zip")
+powershell -command ("wget -o jre21.zip https://github.ink/adoptium/temurin21-binaries/releases/download/jdk-21.0.2+13/OpenJDK21U-jre_x64_windows_hotspot_21.0.2_13.zip")
 ::Download unzip program and run it
 title Download bandizip......
 powershell -command ("wget -o ark.x64.dll https://github.ink/HanSiqi2008/bz.exe-mirror/raw/main/ark.x64.dll")
 powershell -command ("wget -o bz.exe https://github.ink/HanSiqi2008/bz.exe-mirror/raw/main/bz.exe")
 bz.exe x ./jre17.zip ./Java
+bz.exe x ./jre8.zip ./Java
+bz.exe x ./jre21.zip ./Java
 del .\jre17.zip
+del .\jre8.zip
+del .\jre21.zip
 del .\bz.exe
 del .\ark.x64.dll
 ::Download Minecraft 1.20.4 and fabric installer, and run fabric installer
